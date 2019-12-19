@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/calculator.css">
+    <script src="./js/calculator.js"></script>
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="wrapper" class="row">
+            <div class="col-6">
+                <h2>Simple Calculator</h2>
+            </div>
+            <div class="col-6">
+                <input class="btn btn-primary" type="submit" value="Add JSON" onclick="loadDoc()">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="add">
+            <div class="title">
+                <h3>Add</h3>
+                <input id="val1" type="text" placeholder="Value 1">
+                <span>   +   </span>
+                <input id="val2" type="text" placeholder="Value 2">
+                <input type="submit" id="btns" class="btn btn-primary" value="Add" onclick="add()">
+                <input id="addans" type="text" readonly>
+            </div>
+        </div>
+        <div class="sub">
+            <div class="title">
+                <h3>Subtract</h3>
+                <input id="val1sub" type="text" placeholder="Value 1">
+                <span>   -   </span>
+                <input id="val2sub" type="text" placeholder="Value 2">
+                <input type="submit" id="btns" class="btn btn-primary" value="Subtract" onclick="subtract()">
+                <input id="subans" type="text" readonly>
+            </div>
+        </div>
+        <div class="mul">
+            <div class="title">
+                <h3>Multiply</h3>
+                <input id="val1mul" type="text" placeholder="Value 1">
+                <span>   x   </span>
+                <input id="val2mul" type="text" placeholder="Value 2">
+                <input type="submit" id="btns" class="btn btn-primary" value="Multiply" onclick="multiply()">
+                <input id="mulans" type="text" readonly>
+            </div>
+        </div>
+        <div class="divide">
+            <div class="title">
+                <h3>Divide</h3>
+                <input id="val1div" type="text" placeholder="Value 1">
+                <span>   /   </span>
+                <input id="val2div" type="text" placeholder="Value 2">
+                <input type="submit" id="btns" class="btn btn-primary" value="Divide" onclick="divide()">
+                <input id="divans" type="text" readonly>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

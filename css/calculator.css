@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    top: 0;
+}
+
+body {
+    position: relative;
+}
+
+#wrapper {
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+}
+
+.container {
+    position: absolute;
+    margin-top: 10%;
+    text-align: center
+}
+
+#btns {
+    width: 100px;
+}
